@@ -1,0 +1,23 @@
+{
+  "name": "@matseriksson/styles",
+  "version": "0.0.1",
+  "description": "Style package for Mats projects",
+  "main": "index.scss",
+  "scripts": {
+    "build": "sass index.scss dist/index.css --style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foods/styles.git"
+  },
+  "author": "Mats Eriksson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foods/styles/issues"
+  },
+  "homepage": "https://github.com/foods/styles#readme",
+  "devDependencies": {
+    "sass": "^1.77.1"
+  }
+}
