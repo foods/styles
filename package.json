@@ -4,8 +4,10 @@
   "description": "Style package for Mats projects",
   "main": "index.scss",
   "scripts": {
-    "build": "sass index.scss dist/index.css --style=compressed",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass src/index.scss dist/index.css --style=compressed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,43 @@
   },
   "homepage": "https://github.com/foods/styles#readme",
   "devDependencies": {
-    "sass": "^1.77.1"
-  }
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/test": "^8.3.5",
+    "@storybook/web-components": "^8.3.5",
+    "@storybook/web-components-webpack5": "^8.3.5",
+    "lit": "^3.2.0",
+    "sass": "^1.79.4",
+    "sass-loader": "^16.0.2",
+    "storybook": "^8.3.5",
+    "typescript": "^5.6.2",
+    "webpack": "^5.95.0"
+  },
+  "dependencies": {
+    "anymatch": "^3.1.3",
+    "binary-extensions": "^2.3.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.6.0",
+    "fill-range": "^7.0.1",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.3.5",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
+    "readdirp": "^3.6.0",
+    "source-map-js": "^1.2.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "styles"
+  ]
 }
